@@ -88,7 +88,9 @@ var slideShowName = makeFrickShow("YOUR_ID", NUMBER_OF_IMAGES, INITIAL_DELAY[ms]
 Put all your images (As PNG Files) in this folder - and name them like so:
 *id#*
 
-e.g.
+**For Example:**
+
+If my ID is "mainSlide", and I had three images to scroll through, then I would create the following files:
 
 mainSlide1.png
 
