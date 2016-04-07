@@ -18,7 +18,7 @@ Simply add this line to your head tag. Make sure to add it before any files that
 
 ### How to use:
 
-**First of all, import the JS file, and create an empty div with your choice of ID in the body tag:**
+**First of all, import the JS file by following the instructions above, and create an empty div with your choice of ID in the body tag:**
 
 ```html
 <!DOCTYPE html>
