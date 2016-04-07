@@ -4,6 +4,9 @@
 This is a very simple, very barebones slideshow plugin for web development.
 It was originally made due to demand from a classmate, but will no doubt be good for future use.
 
+## [Demo Here](http://imfalling.github.io/FrickShow/)
+#####[Source Here](https://github.com/ImFalling/FrickShow/tree/gh-pages)
+
 ### How to use:
 
 **First of all, import the JS file, and create an empty div with your choice of ID in the body tag:**
@@ -27,7 +30,7 @@ It was originally made due to demand from a classmate, but will no doubt be good
 ***(If in a separate document, make sure it's imported / loaded after FrickShow)***
 
 ```javascript
-var slideShowName = makeFrickShow("YOUR_ID_HERE", NUMBER_OF_IMAGES_TO_SCROLL_THROUGH)
+var slideShowName = makeFrickShow("YOUR_ID_HERE", NUMBER_OF_IMAGES_TO_SCROLL_THROUGH, INITIAL_DELAY[ms], LOOP_DELAY[ms], DEBUG[t/f])
 ```
 
 **Then, make sure the base div has *at least* these elements**
@@ -61,7 +64,19 @@ var slideShowName = makeFrickShow("YOUR_ID_HERE", NUMBER_OF_IMAGES_TO_SCROLL_THR
 
 ```
 
-**Finally, create a folder in the directory of your HTML file named indentically 
+**Finally, for every basediv, create a folder in the directory of your HTML file with the same exact name as the ID of your basediv.**
+
+Put all your images (As PNG Files) in this folder - and name them like so:
+*id#*
+
+e.g.
+
+mainSlide1.png
+
+mainSlide2.png
+
+mainSlide3.png
+
 
 ### Sidenotes
 
