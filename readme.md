@@ -34,7 +34,7 @@ var slideShowName = makeFrickShow("id", number)
 ```css
   #mainSlide{
     position: relative;
-    width: x%;
+    width: 40%;
     height: auto;
   }
 ```
