@@ -39,10 +39,10 @@ Simply add this line to your head tag. Make sure to add it before any files that
 ***(If in a separate document, make sure it's imported / loaded after FrickShow)***
 
 ```javascript
-var slideShowName = makeFrickShow("YOUR_ID_HERE", NUMBER_OF_IMAGES_TO_SCROLL_THROUGH, INITIAL_DELAY[ms], LOOP_DELAY[ms], DEBUG[t/f])
+var slideShowName = makeFrickShow("YOUR_ID_HERE", NUMBER_OF_IMAGES, INITIAL_DELAY[ms], LOOP_DELAY[ms], DEBUG[t/f])
 ```
 
-**Then, make sure the base div has *at least* these elements**
+**Then, make sure the base div has *at least* these CSS attributes**
 ```css
   #YOUR_ID_HERE{
     position: relative;
