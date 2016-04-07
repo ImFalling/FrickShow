@@ -18,7 +18,7 @@ It was originally made due to demand from a classmate, but will no doubt be good
 <body>
 
   <div id="mainSlide"></div>
-  
+
 </body>
 ```
 
@@ -30,24 +30,33 @@ It was originally made due to demand from a classmate, but will no doubt be good
 var slideShowName = makeFrickShow("id", number)
 ```
 
-**If you want to change the CSS of the slideshow, simply reference the ID of the empty div.**
+**Then, make sure the base div has *at least* these elements**
+```css
+  #mainSlide{
+    position: relative;
+    width: x%;
+    height: auto;
+  }
+```
+
+**Feel free to add CSS! Position must be relative, however, or the tag breaks.**
 
 ```css
-
+  /* CSS settings used in the demo*/
   #mainSlide{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    
+
     padding: 0;
     border: 3px solid gray;
-    
+
     display: block;
     position: relative;
-    
+
     width: 40%; /* Recommended way of adjusting size. Set height to auto, and solely change the width */
     height: auto;
   }
-  
+
 ```
