@@ -39,8 +39,14 @@ Simply add this line to your head tag. Make sure to add it before any files that
 ***(If in a separate document, make sure it's imported / loaded after FrickShow)***
 
 ```javascript
-var slideShowName = makeFrickShow("YOUR_ID_HERE", NUMBER_OF_IMAGES, INITIAL_DELAY[ms], LOOP_DELAY[ms], DEBUG[t/f])
+var slideShowName = makeFrickShow("YOUR_ID", NUMBER_OF_IMAGES, INITIAL_DELAY[ms], LOOP_DELAY[ms], DEBUG[t/f])
 ```
+
+**YOUR_ID** = The ID of your basediv (String)
+**NUMBER_OF_IMAGES** = The number of images to scroll through (Number)
+**INITIAL_DELAY** = How long to wait after page has loaded to start the loop (Number in Milliseconds)
+**LOOP_DELAY** = How long to wait between each transition (Number in Milliseconds
+**DEBUG** = Debug mode (Boolean (True or False)) (False recommended)
 
 **Then, make sure the base div has *at least* these CSS attributes**
 ```css
