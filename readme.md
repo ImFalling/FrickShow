@@ -17,7 +17,7 @@ It was originally made due to demand from a classmate, but will no doubt be good
 
 <body>
 
-  <div id="mainSlide"></div>
+  <div id="YOUR_ID_HERE"></div>
 
 </body>
 ```
@@ -27,12 +27,12 @@ It was originally made due to demand from a classmate, but will no doubt be good
 ***(If in a separate document, make sure it's imported / loaded after FrickShow)***
 
 ```javascript
-var slideShowName = makeFrickShow("id", number)
+var slideShowName = makeFrickShow("YOUR_ID_HERE", NUMBER_OF_IMAGES_TO_SCROLL_THROUGH)
 ```
 
 **Then, make sure the base div has *at least* these elements**
 ```css
-  #mainSlide{
+  #YOUR_ID_HERE{
     position: relative;
     width: 40%;
     height: auto;
@@ -43,7 +43,7 @@ var slideShowName = makeFrickShow("id", number)
 
 ```css
   /* CSS settings used in the demo*/
-  #mainSlide{
+  #YOUR_ID_HERE{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -60,3 +60,12 @@ var slideShowName = makeFrickShow("id", number)
   }
 
 ```
+
+**Finally, create a folder in the directory of your HTML file named indentically 
+
+### Sidenotes
+
+**I've only tested with images in 1920*1080 resolution. In theory, other sizes should work.**
+
+I would however recommend that all images are the identical size. Again, the plugin should probably work,
+but the transitions will look very ugly and choppy.
