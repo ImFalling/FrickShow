@@ -106,6 +106,6 @@ mainSlide3.png
 I would however recommend that all images are the identical size. Again, the plugin should probably work,
 but the transitions will look very ugly and choppy.
 
-FrickShow is a play-on-words of Slideshow and Freakshow. Hilarious, I know.
+FrickShow is a play-on-words of Slideshow and Freakshow, as well as my last name. Hilarious, I know.
 
 Written in one day by Jakob Frick (April 7th 2016)
