@@ -43,9 +43,13 @@ var slideShowName = makeFrickShow("YOUR_ID", NUMBER_OF_IMAGES, INITIAL_DELAY[ms]
 ```
 
 **YOUR_ID** = The ID of your basediv (String)
+
 **NUMBER_OF_IMAGES** = The number of images to scroll through (Number)
+
 **INITIAL_DELAY** = How long to wait after page has loaded to start the loop (Number in Milliseconds)
-**LOOP_DELAY** = How long to wait between each transition (Number in Milliseconds
+
+**LOOP_DELAY** = How long to wait between each transition (Number in Milliseconds)
+
 **DEBUG** = Debug mode (Boolean (True or False)) (False recommended)
 
 **Then, make sure the base div has *at least* these CSS attributes**
