@@ -7,6 +7,15 @@ It was originally made due to demand from a classmate, but will no doubt be good
 ## [Demo Here](http://imfalling.github.io/FrickShow/)
 #####[Source Here](https://github.com/ImFalling/FrickShow/tree/gh-pages)
 
+## How to install
+Simply add this line to your head tag. Make sure to add it before any files that will use it.
+
+```html
+  <head>
+    <script type="text/javascript" src="frickShow.js"></script>
+  </head>
+```
+
 ### How to use:
 
 **First of all, import the JS file, and create an empty div with your choice of ID in the body tag:**
