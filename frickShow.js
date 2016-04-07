@@ -219,7 +219,7 @@ function loadArrows(){
 
     var arrowImg = document.createElement("img");
     arrowImg.setAttribute("class", "arrowImgClass");
-    arrowImg.setAttribute("src", "frickShow/arrow.png");
+    arrowImg.setAttribute("src", "https://raw.githubusercontent.com/ImFalling/FrickShow/gh-pages/frickShow/arrow.png");
     arrowImg.style.width = "100%";
     arrowImg.style.height = "auto";
 
