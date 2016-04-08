@@ -109,3 +109,9 @@ but the transitions will look very ugly and choppy.
 FrickShow is a play-on-words of Slideshow and Freakshow, as well as my last name. Hilarious, I know.
 
 Written in one day by Jakob Frick (April 7th 2016)
+
+
+### To be added
+
++ Support for padding the main div (Currently breaks the tag, if needed, use a separate div for it)
++ Multiple Transitions
