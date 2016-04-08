@@ -12,7 +12,7 @@ Simply add this line to your head tag. Make sure to add it before any files that
 
 ```html
   <head>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ImFalling/FrickShow/master/frickShow.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/ImFalling/FrickShow/master/frickShow.js"></script>
   </head>
 ```
 
@@ -24,7 +24,7 @@ Simply add this line to your head tag. Make sure to add it before any files that
 <!DOCTYPE html>
 
 <head>
-  <script type="text/javascript" src="https://raw.githubusercontent.com/ImFalling/FrickShow/master/frickShow.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/ImFalling/FrickShow/master/frickShow.js"></script>
 </head>
 
 <body>
