@@ -55,9 +55,8 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       var temp = document.createElement("img");
 
       //Set image and CSS attributes
-      temp.setAttribute("src", ""+id+"/"+id+""+i.toString()+".png") ||
-      temp.setAttribute("src", ""+id+"/"+id+""+i.toString()+".jpeg") ||
-      temp.setAttribute("src", ""+id+"/"+id+""+i.toString()+".gif");
+      temp.setAttribute("src", ""+id+"/"+id+""+i.toString()+".png");
+
       temp.style.opacity = 0;
       temp.style.display = "none";
       temp.style.verticalAlign = "middle";
