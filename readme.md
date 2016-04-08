@@ -108,7 +108,7 @@ but the transitions will look very ugly and choppy.
 
 FrickShow is a play-on-words of Slideshow and Freakshow, as well as my last name. Hilarious, I know.
 
-Written in one day by Jakob Frick (April 7th 2016)
+Written in one day by **Jakob Frick** (April 7th 2016)
 
 
 ### To be added
