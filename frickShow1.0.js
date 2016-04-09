@@ -55,20 +55,22 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       var temp = document.createElement("img");
 
       //Set image and CSS attributes
-      if(ImageExist(""+id+"/"+id+""+i.toString()+".png")){
-        temp.src = ""+id+"/"+id+""+i.toString()+".png";
-      }
-      else{
-        if(ImageExist(""+id+"/"+id+""+i.toString()+".jpeg")){
-          temp.src = ""+id+"/"+id+""+i.toString()+".jpeg";
+      for(i = 1; i <= 1; i++ ){
+        if(ImageExist(""+id+"/"+id+""+i.toString()+".png")){
+          temp.src = ""+id+"/"+id+""+i.toString()+".png";
         }
         else{
-          if(ImageExist(""+id+"/"+id+""+i.toString()+".jpg")){
-            temp.src = ""+id+"/"+id+""+i.toString()+".jpg";
+          if(ImageExist(""+id+"/"+id+""+i.toString()+".jpeg")){
+            temp.src = ""+id+"/"+id+""+i.toString()+".jpeg";
           }
           else{
-            if(ImageExist(""+id+"/"+id+""+i.toString()+".gif")){
-              temp.src = ""+id+"/"+id+""+i.toString()+".gif";
+            if(ImageExist(""+id+"/"+id+""+i.toString()+".jpg")){
+              temp.src = ""+id+"/"+id+""+i.toString()+".jpg";
+            }
+            else{
+              if(ImageExist(""+id+"/"+id+""+i.toString()+".gif")){
+                temp.src = ""+id+"/"+id+""+i.toString()+".gif";
+              }
             }
           }
         }
