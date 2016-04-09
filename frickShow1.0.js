@@ -1,7 +1,7 @@
 
 //FrickShow.js - An open sourced slideshow plugin written in pure JS by Jakob Frick (2016). More info can be found at [imfalling.github.com/frickShow]
 
-if(privatedebug){console.log("%c[[ "+"%cfrickShow.js 1.0.13 "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");}
+console.log("%c[[ "+"%cfrickShow.js 1.0.13 "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");
 
 //Create variables to be used throughout the "class" file.
 var privateSlides;
