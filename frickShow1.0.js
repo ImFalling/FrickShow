@@ -49,6 +49,8 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       loadArrows();
     //Initiates base of slideshow
     var slideBody = document.getElementById(id.toString());
+
+    //Adds images and their appropriate CSS based on the input "slides"
     for(var i = 1; i <= slides; i++){
 
       //Create variable for image
@@ -58,20 +60,14 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
         if(ImageExist(""+id+"/"+id+""+i.toString()+".png")){
           temp.src = ""+id+"/"+id+""+i.toString()+".png";
         }
-        else{
-          if(ImageExist(""+id+"/"+id+""+i.toString()+".jpeg")){
+        else if(ImageExist(""+id+"/"+id+""+i.toString()+".jpeg")){
             temp.src = ""+id+"/"+id+""+i.toString()+".jpeg";
-          }
-          else{
-            if(ImageExist(""+id+"/"+id+""+i.toString()+".jpg")){
-              temp.src = ""+id+"/"+id+""+i.toString()+".jpg";
-            }
-            else{
-              if(ImageExist(""+id+"/"+id+""+i.toString()+".gif")){
-                temp.src = ""+id+"/"+id+""+i.toString()+".gif";
-              }
-            }
-          }
+        }
+        else if(ImageExist(""+id+"/"+id+""+i.toString()+".jpg")){
+            temp.src = ""+id+"/"+id+""+i.toString()+".jpg";
+        }
+        else if(ImageExist(""+id+"/"+id+""+i.toString()+".gif")){
+            temp.src = ""+id+"/"+id+""+i.toString()+".gif";
         }
 
       temp.style.opacity = 0;
