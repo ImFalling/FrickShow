@@ -55,18 +55,16 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       var temp = document.createElement("img");
 
       //Set image and CSS attributes
-        if(ImageExist(""+id+"/"+id+""+i.toString()+".png")){
-          temp.src = ""+id+"/"+id+""+i.toString()+".png";
-        }
-        else if(ImageExist(""+id+"/"+id+""+i.toString()+".jpeg")){
-            temp.src = ""+id+"/"+id+""+i.toString()+".jpeg";
-        }
-        else if(ImageExist(""+id+"/"+id+""+i.toString()+".jpg")){
-            temp.src = ""+id+"/"+id+""+i.toString()+".jpg";
-        }
-        else if(ImageExist(""+id+"/"+id+""+i.toString()+".gif")){
+      temp.src = ""+id+"/"+id+""+i.toString()+".png";
+      if(temp.width === 0){
+        temp.src = ""+id+"/"+id+""+i.toString()+".jpg";
+        if(temp.width === 0){
+          temp.src = ""+id+"/"+id+""+i.toString()+".jpeg";
+          if(temp.width === 0){
             temp.src = ""+id+"/"+id+""+i.toString()+".gif";
+          }
         }
+      }
 
       temp.style.opacity = 0;
       temp.style.display = "none";
@@ -305,11 +303,4 @@ function restartLoop(){
         switchImgFwd( document.getElementById(privateid+"slide"+currentImgNum.toString()), document.getElementById(privateid+"slide"+nextImgNum.toString()) );
 
   }, privateintervaltime);
-}
-
-function ImageExist(url)
-{
-  var img = new Image();
-  img.src = url;
-  return img.height !== 0;
 }
