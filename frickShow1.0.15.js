@@ -19,7 +19,7 @@ var nextImgNum = 3;
 
 //Main function which is called from index
 function makeFrickShow(id, slides, init, intervaltime, debug){
-  console.log("%c[[ "+"%cfrickShow.js 1.0.13 "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");
+  console.log("%c[[ "+"%cfrickShow.js 1.0.15 "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");
   //Assign values to private vars
   privateSlides = slides;
   privateid = id;
@@ -55,16 +55,7 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       var temp = document.createElement("img");
 
       //Set image and CSS attributes
-      temp.src = ""+id+"/"+id+""+i.toString()+".png";
-      if(temp.width === 0){
-        temp.src = ""+id+"/"+id+""+i.toString()+".jpg";
-        if(temp.width === 0){
-          temp.src = ""+id+"/"+id+""+i.toString()+".jpeg";
-          if(temp.width === 0){
-            temp.src = ""+id+"/"+id+""+i.toString()+".gif";
-          }
-        }
-      }
+      temp.src = ""+id+"/"+id+""+i.toString()+"";
 
       temp.style.opacity = 0;
       temp.style.display = "none";
