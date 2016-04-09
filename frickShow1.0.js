@@ -232,7 +232,7 @@ function decreaseNumber(imgNum){
 function loadArrows(){
 
   for(i = 1; i <= 2; i++){
-    var slideBody2 = document.getElementById(privateid.toString());
+    var slideBody2 = document.getElementById(privateid);
     var arrow = document.createElement("div");
 
     var arrowImg = document.createElement("img");
