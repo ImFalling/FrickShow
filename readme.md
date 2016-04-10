@@ -110,9 +110,12 @@ FrickShow is a play-on-words of Slideshow and Freakshow, as well as my last name
 
 Written in one day by **Jakob Frick** (April 7th 2016)
 
+### Known bugs
++ Adding padding to main div creates issue with image scaling.
 
 ### To be added
 
 + Support for padding the main div (Currently breaks the tag, if needed, use a separate div for it)
 + Multiple Transitions
++ Events for image switching and arrow clicking for further, manual scripting.
 + Currently no support for multiple file formats, all images need to be PNGs. 
