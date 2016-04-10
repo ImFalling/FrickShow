@@ -55,7 +55,25 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       var temp = document.createElement("img");
 
       //Set image and CSS attributes
-      temp.setAttribute("src", ""+id+"/"+id+""+i.toString()+".png");
+      var yurl;
+      for(var k = 1; k <= 4; k++){
+        if(i == 1){
+          yurl = ""+privateid+"/"+privateid+""+k.toString()+".png";
+        }
+        else if(k == 2){
+          yurl = ""+privateid+"/"+privateid+""+k.toString()+".jpeg";
+        }
+        else if(k == 3){
+          yurl = ""+privateid+"/"+privateid+""+k.toString()+".jpg";
+        }
+        else if(k == 4){
+          yurl = ""+privateid+"/"+privateid+""+k.toString()+".gif";
+        }
+
+        if(checkFile(yurl)){
+          temp.setAttribute("src", yurl);
+        }
+      }
 
       temp.style.opacity = 0;
       temp.style.display = "none";
@@ -294,4 +312,10 @@ function restartLoop(){
         switchImgFwd( document.getElementById(privateid+"slide"+currentImgNum.toString()), document.getElementById(privateid+"slide"+nextImgNum.toString()) );
 
   }, privateintervaltime);
+}
+
+function checkFile(url){
+  var tempo = new Img();
+  tempo.src = url;
+  return tempo !== null;
 }
