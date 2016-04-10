@@ -57,22 +57,24 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       //Set image and CSS attributes
       var yurl;
       for(var k = 1; k <= 4; k++){
-        if(i == 1){
-          yurl = ""+privateid+"/"+privateid+""+k.toString()+".png";
+        if(k == 1){
+          yurl = ""+privateid+"/"+privateid+""+i.toString()+".png";
         }
         else if(k == 2){
-          yurl = ""+privateid+"/"+privateid+""+k.toString()+".jpeg";
+          yurl = ""+privateid+"/"+privateid+""+i.toString()+".jpeg";
         }
         else if(k == 3){
-          yurl = ""+privateid+"/"+privateid+""+k.toString()+".jpg";
+          yurl = ""+privateid+"/"+privateid+""+i.toString()+".jpg";
         }
         else if(k == 4){
-          yurl = ""+privateid+"/"+privateid+""+k.toString()+".gif";
+          yurl = ""+privateid+"/"+privateid+""+i.toString()+".gif";
         }
 
         if(checkFile(yurl)){
           temp.setAttribute("src", yurl);
+          break;
         }
+
       }
 
       temp.style.opacity = 0;
@@ -315,7 +317,8 @@ function restartLoop(){
 }
 
 function checkFile(url){
-  var tempo = new Img();
+  var tempo = new Image();
   tempo.src = url;
-  return tempo !== null;
+  console.log(tempo.height);
+  return tempo.height !== 0;
 }
