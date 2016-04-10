@@ -52,11 +52,12 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
     for(var i = 1; i <= slides; i++){
 
       //Create variable for image
-      var temp = document.createElement("img");
+      var temp = document.createElement("div");
 
-      //Set image and CSS attributes
-      var yurl;
-      for(var k = 1; k <= 4; k++){
+      for(var l = 1; l <= 4; l++){
+        var tempInner = document.createElement("img");
+        tempInner.setAttribute("id", id+"slideinner"+i.toString()+"");
+        var yurl;
         if(k == 1){
           yurl = ""+privateid+"/"+privateid+""+i.toString()+".png";
         }
@@ -70,10 +71,13 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
           yurl = ""+privateid+"/"+privateid+""+i.toString()+".gif";
         }
 
-        if(checkFile(yurl)){
-          temp.setAttribute("src", yurl);
-          break;
-        }
+        tempInner.setAttribute("src", yurl);
+        tempInner.style.verticalAlign = "middle";
+        tempInner.style.position = "relative";
+        tempInner.style.maxWidth = "100%";
+        tempInner.style.maxHeight = "auto";
+
+        temp.appendChild(tempInner);
 
       }
 
