@@ -19,7 +19,7 @@ var nextImgNum = 3;
 
 //Main function which is called from index
 function makeFrickShow(id, slides, init, intervaltime, debug){
-  console.log("%c[[ "+"%cfrickShow.js 1.0.15 "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");
+  console.log("%c[[ "+"%cfrickShow.js 1.0.17 "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");
   //Assign values to private vars
   privateSlides = slides;
   privateid = id;
