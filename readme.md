@@ -115,3 +115,4 @@ Written in one day by **Jakob Frick** (April 7th 2016)
 
 + Support for padding the main div (Currently breaks the tag, if needed, use a separate div for it)
 + Multiple Transitions
++ Currently no support for multiple file formats, all images need to be PNGs. 
