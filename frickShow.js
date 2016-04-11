@@ -58,20 +58,23 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
         var tempInner = document.createElement("img");
         tempInner.setAttribute("id", id+"slideinner"+i.toString()+"");
         var yurl;
-        if(k == 1){
+        if(l == 1){
           yurl = ""+privateid+"/"+privateid+""+i.toString()+".png";
         }
-        else if(k == 2){
+        else if(l == 2){
           yurl = ""+privateid+"/"+privateid+""+i.toString()+".jpeg";
         }
-        else if(k == 3){
+        else if(l == 3){
           yurl = ""+privateid+"/"+privateid+""+i.toString()+".jpg";
         }
-        else if(k == 4){
+        else if(l == 4){
           yurl = ""+privateid+"/"+privateid+""+i.toString()+".gif";
         }
 
         tempInner.setAttribute("src", yurl);
+        if(tempInner.height === 0){
+          tempInner.style.display = "none";
+        }
         tempInner.style.verticalAlign = "middle";
         tempInner.style.position = "relative";
         tempInner.style.maxWidth = "100%";
