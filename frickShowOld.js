@@ -19,7 +19,7 @@ var nextImgNum = 3;
 
 //Main function which is called from index
 function makeFrickShow(id, slides, init, intervaltime, debug){
-  console.log("%c[[ "+"%cfrickShow.js 1.0.17 "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");
+  console.log("%c[[ "+"%cfrickShow.js 1.0.16 (Old) "+"%cLoaded Properly "+"%c]]", "color:red; font-weight: bold;", "color: darkGreen; font-weight: bold;", "color:purple; font-weight: bold;", "color:red; font-weight: bold;");
   //Assign values to private vars
   privateSlides = slides;
   privateid = id;
@@ -54,27 +54,7 @@ function makeFrickShow(id, slides, init, intervaltime, debug){
       //Create variable for image
       var temp = document.createElement("img");
       //Set image and CSS attributes
-      var yurl;
-      for(var k = 1; k <= 4; k++){
-        if(k == 1){
-          yurl = ""+privateid+"/"+privateid+""+i.toString()+".png";
-        }
-        else if(k == 2){
-          yurl = ""+privateid+"/"+privateid+""+i.toString()+".jpeg";
-        }
-        else if(k == 3){
-          yurl = ""+privateid+"/"+privateid+""+i.toString()+".jpg";
-        }
-        else if(k == 4){
-          yurl = ""+privateid+"/"+privateid+""+i.toString()+".gif";
-        }
-
-        if(checkFile(yurl)){
-          temp.setAttribute("src", yurl);
-          break;
-        }
-
-      }
+      temp.src = ""+privateid+"/"+privateid+""+i.toString()+".png";
 
       temp.style.opacity = 0;
       temp.style.display = "none";
